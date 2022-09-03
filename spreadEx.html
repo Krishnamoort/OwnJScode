@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const arrValue = ['my', 'name ', 'is', 'krishna']
+        console.log(arrValue);
+        //expanding it
+        console.log(...arrValue)
+
+        const arr1 = ['one', 'two']
+        const arr2 = [...arr1, 'three', 'four']
+        console.log(arr2);
+
+        //Rest parameter ..spred operator use as the parameter called rest Parameter
+        let func = function (...args) {
+            console.log(args);
+        }
+        func(3);
+        func(4, 5, 6);
+
+        function mul(x, y, z) {
+            console.log(x * y * z);
+        }
+        const num1 = [1, 25, 22];
+        mul(...num1);
+
+        //default parameter
+
+        function sum(x = 3, y = 4) {
+            return x + y
+        }
+        console.log(sum(5, 6));
+        console.log(sum(7));
+        console.log(sum());
+
+
+    </script>
+</body>
+
+</html>

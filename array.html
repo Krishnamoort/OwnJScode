@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+        let scores = new Array();
+        let n = new Array(1, 2, 3);
+        let signs = new Array('red');
+
+        scores.push('krishna')
+        console.log(scores[0]);
+
+        let emptyArray = [];
+        emptyArray.push('x', 'y');
+        console.log(emptyArray[1]);
+
+        let bookMy = ('surelyJoking ', 'indiaSince ');
+        console.log(bookMy[0]);
+        console.log(bookMy[1]);
+
+        let studies = ['javascipt', 'html', 'css', 'mangoDb', 'express', 'testing']
+        let removed = studies.pop();
+        document.getElementById('demo1').innerHTML = 'original array :' + studies
+        document.getElementById('demo2').innerHTML = 'removed item is :' + studies.shift()
+        document.getElementById('demo3').innerHTML = 'new array : ' + studies
+        studies.unshift('AI')
+
+        document.getElementById('demo4').innerHTML = 'at last we have: ' + studies
+
+///original array :javascipt,html,css,mangoDb,express
+
+//removed item is :javascipt
+
+//new array : html,css,mangoDb,express
+
+//at last we have: AI,html,css,mangoDb,expres
+    </script>
+</body>
+
+</html>

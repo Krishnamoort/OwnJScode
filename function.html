@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            margin: 2rem;
+            padding: 1rem;
+            color: #fff;
+            box-shadow: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="try"></p>
+    <button onclick="Myclick()">click me</button>
+    <p id="demo"></p>
+    <script>
+
+        function to() {
+            x = 'krishna'
+            var x;
+            let y = "Developer"
+            return x + '' + 'was an' + '' + y
+
+        }
+        document.getElementById('try').innerHTML = to();
+        function Myclick() {
+            document.getElementById('demo').innerHTML = to();
+
+        }
+        onclick();
+
+
+    </script>
+</body>
+
+</html>

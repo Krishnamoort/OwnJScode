@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="me"></p>
+    <p id="demo"></p>
+    <script>
+        class orgaNize {
+            constructor(notEqual, equal) {
+                this.equal = equal
+                this.notEqual = notEqual
+            }
+            static correption() {
+                return 'not be honesty'
+            }
+        }
+        let iAm = new orgaNize('kkk');
+        document.getElementById('me').innerHTML = iAm + "" + orgaNize.correption()
+        document.getElementById('me').innerHTML = iAm.correption()
+
+        //getter setter method
+        class Company {
+            constructor(brand) {
+                this.companyName = brand;
+
+            }
+            get name() {
+                this.companyName;
+            }
+            set name(x) {
+                this.companyName = x + 'PVT ltd';
+            }
+        }
+        let myComp = new Company('Shell India');
+        document.getElementById('demo').innerHTML = Company.companyName()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Spread operators-->
+    <!--default key value pare-->
+    <script>
+        //how to create a map
+        const map1 = new Map();
+        console.log(map1);
+        map1.set('Focus', 'Study')
+        map1.set('which one', 'MEAN');
+        map1.set('Becaz', 'become a developer')
+        map1.set('studied', 'mean')
+        console.log(map1);
+        //every object having a prototype
+        console.log(map1.has('need'))
+        console.log(map1.get('need'))
+        console.log(map1.delete('studied'))
+        console.log(map1)
+
+        //keys method
+        let ItsKeyMeth = "";
+        for (const x of map1.keys()) {
+            ItsKeyMeth += x + " ";
+        }
+        console.log(ItsKeyMeth)
+        //val method
+        let ItsKeyValue = " ";
+        for (const x of map1.values()) {
+            ItsKeyValue += x + " ";
+        }
+        console.log(ItsKeyValue)
+
+        //Enteries
+        let ItsKeyEnteries = " ";
+        for (const x of map1.entries()) {
+            ItsKeyEnteries += x + " ";
+        }
+        console.log(ItsKeyEnteries)
+
+
+    </script>
+</body>
+
+</html>

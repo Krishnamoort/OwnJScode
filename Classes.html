@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="sundh"></p>
+    <p id="mohan"></p>
+    <p id="vinoth"></p>
+    <p id="my"></p>
+    <script>
+        class Job {
+            constructor(designation, salary) {
+                this.designation = designation;
+                this.salary = salary;
+            }
+
+        }
+        let sundhJob = new Job("IAM", 35000)
+        document.getElementById('sundh').innerHTML = sundhJob.designation + ' ' + sundhJob.salary;
+        let mohanJob = new Job("Soft Associate", 45000)
+        document.getElementById('mohan').innerHTML = mohanJob.designation + ' ' + mohanJob.salary;
+        let vinothJob = new Job("Cloud computing", 40000)
+        document.getElementById('vinoth').innerHTML = vinothJob.designation + ' ' + vinothJob.salary;
+        let myJob = new Job("instrumentation", 15000)
+        document.getElementById('my').innerHTML = myJob.designation + '   ' + myJob.salary;
+    </script>
+</body>
+
+</html>
